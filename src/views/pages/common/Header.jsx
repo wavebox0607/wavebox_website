@@ -41,7 +41,6 @@ const Header = () => {
                 duration: 0.8,
                 type: "spring", 
                 velocity: 2
-                // staggerChildren: 0.6
             }
         }
     };
