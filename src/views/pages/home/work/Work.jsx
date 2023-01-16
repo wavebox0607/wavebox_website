@@ -62,9 +62,9 @@ const Work = () => {
   }
     `
     return (
-        <div className='bg-black text-white py-20 relative'>
+        <div className='bg-black text-white xl:py-20 py-10 relative'>
             <style>{styleCss}</style>
-            <div className='xl:max-w-[1200px] mx-auto relative'>
+            <div className='xl:max-w-[1200px] mx-auto px-5 xl:px-0 relative'>
                 <div className='flex gap-3 items-center'>
                     <div className='flex items-center'>
                         <p className='bg-gray-300 h-1 w-1 rounded-full'></p>
@@ -89,6 +89,24 @@ const Work = () => {
                 pagination={pagination}
                 modules={[FreeMode, Pagination]}
                 className="mySwiper"
+                breakpoints= {{
+                    300: {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                    },
+                    640: {
+                      slidesPerView: 2,
+                      spaceBetween: 10,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
+                  }}
             >
                 <SwiperSlide>
                     <div className='relative group'>

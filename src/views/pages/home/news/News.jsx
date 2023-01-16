@@ -59,9 +59,9 @@ const News = () => {
   }
     `
     return (
-        <div className='bg-black text-white py-20'>
+        <div className='bg-black text-white xl:py-20'>
             <style>{styleCss}</style>
-            <div className='xl:max-w-[1200px] mx-auto relative'>
+            <div className='xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative'>
                 <div className='flex gap-3 items-center'>
                     <div className='flex items-center'>
                         <p className='bg-gray-300 h-1 w-1 rounded-full'></p>
@@ -71,7 +71,7 @@ const News = () => {
                 </div>
 
                 <div>
-                    <h1 className='text-5xl font-semibold mt-5 leading-[50px] mb-20'>Posts & Forums</h1>
+                    <h1 className='xl:text-5xl text-4xl font-semibold mt-5 leading-[50px] mb-20'>Posts & Forums</h1>
                 </div>
 
                 <div>
@@ -79,7 +79,7 @@ const News = () => {
                 </div>
 
                 <Swiper
-                    slidesPerView={2}
+                    // slidesPerView={2}
                     loop={true}
                     centeredSlides={true}
                     // autoplay={{
@@ -90,6 +90,24 @@ const News = () => {
                     pagination={pagination}
                     modules={[FreeMode, Pagination]}
                     className="mySwiper"
+                    breakpoints= {{
+                        300: {
+                          slidesPerView: 1,
+                          spaceBetween: 10,
+                        },
+                        640: {
+                          slidesPerView: 1,
+                          spaceBetween: 10,
+                        },
+                        768: {
+                          slidesPerView: 2,
+                          spaceBetween: 20,
+                        },
+                        1024: {
+                          slidesPerView: 2,
+                          spaceBetween: 30,
+                        },
+                      }}
                 >
                     <SwiperSlide>
                         <div>

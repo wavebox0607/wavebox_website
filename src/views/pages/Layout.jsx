@@ -56,12 +56,12 @@ const LoaderThree = ({ modal, loader }) => {
     <div className='relative'>
       <div className={`h-full duration-3000 fixed bg-black text-white top-0 w-full left-0 overflow-hidden z-[100]`}>
         {/* <RiseLoader color="#36d7b7" /> */}
-        <h1 className='text-6xl -mt-20 absolute top-1/2 left-1/2 -translate-x-1/2 z-[5] font-bold '>WAVE BOX</h1>
+        <h1 className='text-3xl xl:text-6xl -mt-14 xl:-mt-20 absolute top-1/2 left-1/2 -translate-x-1/2 z-[5] font-bold '>WAVE BOX</h1>
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 mt-2 z-[5]'>
           <h1>Loading</h1>
         </div>
-        <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[5] text-[600px] opacity-[0.03] tracking-widest'>
-          <CountUp start={50} end={100} duration={3} />
+        <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[5] text-[200px] xl:text-[600px] opacity-[0.03] tracking-wider xl:tracking-widest'>
+          <CountUp start={50} end={100} duration={2.9} />
         </div>
         <div className='h-[2px] w-full absolute top-1/2 left-0 -translate-y-1/2 bg-gray-600 z-[5]'></div>
         <div className={`h-[2px] ${modal ? 'w-full' : 'w-0'} duration-[2500ms] absolute top-1/2 left-0 -translate-y-1/2 bg-white z-[6]`}></div>

@@ -59,18 +59,18 @@ const Contact = () => {
     <div ref={app} className="App">
       <div ref={scrollContainer} className="scroll">
         <div className='bg-black text-white pt-40'>
-          <div className='flex items-center gap-10 pl-60'>
+          <div className='flex items-center gap-10 xl:pl-60 pl-5'>
             <p className='w-24 p-[1px] bg-white'></p>
             <div>
               <p className='font-semibold tracking-[4px]'>Let's Talk</p>
-              <h1 className='text-6xl mt-3 font-bold'>Contact</h1>
+              <h1 className='xl:text-6xl text-4xl mt-3 font-bold'>Contact</h1>
             </div>
           </div>
 
           {/* message  */}
 
-          <div className='grid grid-cols-2 gap-10 xl:max-w-[1200px] mx-auto py-10'>
-            <div className='bg-[#090909] p-10'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 px-5 xl:px-0 xl:max-w-[1200px] mx-auto py-10'>
+            <div className='bg-[#090909] xl:p-10 p-3'>
               <h1 className='text-4xl font-bold pb-5'>Start a new project?</h1>
               <p className='font-semibold text-[#B0B0B0]'>If you have any quarries please send us a mail, A WAVE BOX representative will contact you shortly after receiving your request or you can also call our support number.</p>
               <div className='flex flex-col gap-5 mt-5'>
@@ -84,7 +84,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col gap-1 text-sm font-bold'>
                   <p>ADDRESS</p>
-                  <p className='text-[#B0B0B0] border-dotted border-b border-[#717171] w-max'>7th Floor, House: 02, Road: 10, Nikunjo 2, Dhaka, Bangladesh</p>
+                  <p className='text-[#B0B0B0] border-dotted border-b border-[#717171]'>7th Floor, House: 02, Road: 10, Nikunjo 2, Dhaka, Bangladesh</p>
                 </div>
               </div>
             </div>
@@ -116,11 +116,11 @@ const Contact = () => {
 
 
           <div className='bg-black py-20 text-white'>
-            <div className='py-24 relative group'>
-              <div className='bg-[#090909] absolute top-0 w-full group-hover:w-0 group-hover:right-0 right-0 duration-1000 bottom-0 z-[1] '></div>
-              <div className='flex justify-between items-center xl:max-w-[1200px] mx-auto relative z-[2]'>
+            <div className='xl:py-24 py-5 relative group'>
+              <div className='bg-[#090909] absolute top-0 w-full xl:group-hover:w-0 xl:group-hover:right-0 right-0 duration-1000 bottom-0 z-[1] '></div>
+              <div className='flex justify-between items-center xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative z-[2]'>
                 <div>
-                  <p className='text-5xl font-semibold leading-[60px]'>NEWS FEED</p>
+                  <p className='xl:text-5xl text-3xl font-semibold leading-[60px]'>NEWS FEED</p>
                 </div>
                 <div>
                   <p className='font-medium group-hover:underline underline-offset-4'>See More News</p>

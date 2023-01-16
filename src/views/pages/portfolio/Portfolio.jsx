@@ -24,6 +24,8 @@ const Portfolio = () => {
     let [modal, setModal] = useState(false)
     let [id, setId] = useState()
 
+    console.log(isOpen,"isOpen");
+
     setTimeout(() => {
         if (isOpen === true) {
             setModal(true)
@@ -32,6 +34,13 @@ const Portfolio = () => {
             setModal(false)
         }
     }, 200);
+
+    // if (isOpen === false) {
+    //     document.body.style.overflow = 'hidden';
+    // }
+    // else {
+    //     document.body.style.overflow = 'unset';
+    // }
 
 
     const pagination = {
@@ -44,12 +53,6 @@ const Portfolio = () => {
         },
     };
 
-    const scrollbar = {
-        scrollbar: {
-            el: '.swiper-scrollbar-portfolio',
-            draggable: true,
-        },
-    }
 
     const prevEl = 'portfolio-prev'
     const nextEl = 'portfolio-next'
@@ -106,7 +109,7 @@ const Portfolio = () => {
     `
     return (
         <div>
-            <div className="w-full relative z-0">
+            <div className="overflow-hidden relative">
                 <style>{styleCss}</style>
 
                 <div className='flex gap-2 cursor-pointer absolute right-20 bottom-5 z-10'>
@@ -127,7 +130,7 @@ const Portfolio = () => {
                     speed={1000}
                     loop={true}
                     pagination={pagination}
-                    scrollbar={scrollbar}
+                    // scrollbar={scrollbar}
 
 
                     autoplay={{
