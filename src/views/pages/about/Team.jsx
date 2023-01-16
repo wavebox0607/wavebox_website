@@ -46,14 +46,18 @@ const Team = () => {
                             modules={[EffectCoverflow, Pagination]}
                             className="mySwiper rounded-xl overflow-hidden "
                         >
-                            <SwiperSlide>
-                                <img src={img1} alt="img" className='rounded-xl h-80 overflow-hidden border-4 border-black' />
+                            <SwiperSlide className='overflow-hidden'>
+                                <img src={img1} alt="img" className='rounded-xl overflow-hidden border-4 border-black' />
+                                <div className='text-center mt-3'>
+                                    <h1>Hasib Ahmed Soyad</h1>
+                                    <p>Founder & CEO</p>
+                                </div>
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <img src={img2} alt="img" className='rounded-xl h-80 overflow-hidden border-4 border-black' />
+                            <SwiperSlide className='overflow-hidden'>
+                                <img src={img2} alt="img" className='rounded-xl overflow-hidden border-4 border-black' />
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <img src={img3} alt="img" className='rounded-xl h-80 overflow-hidden border-4 border-black' />
+                            <SwiperSlide className='overflow-hidden'>
+                                <img src={img3} alt="img" className='rounded-xl overflow-hidden border-4 border-black' />
                             </SwiperSlide>
 
                         </Swiper>
