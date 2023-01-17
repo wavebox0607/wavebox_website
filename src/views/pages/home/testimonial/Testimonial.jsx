@@ -62,12 +62,12 @@ const Testimonial = () => {
     return (
         <div className='bg-black pb-20 pt-28'>
             <style>{styleCss}</style>
-            <div className='xl:max-w-[1200px] mx-auto relative bg-[#090909] h-96'>
-                <div className='grid grid-cols-3 text-white'>
+            <div className='xl:max-w-[1200px] mx-auto relative bg-[#090909] xl:h-96'>
+                <div className='grid grid-cols-2 xl:grid-cols-3 text-white'>
                     <div className='col-span-1'>
-                        <h1 className='text-4xl font-bold ml-10 -mt-10'>We Love Being <br />Appreciated.</h1>
+                        <h1 className='text-4xl font-bold ml-5 xl:ml-10 xl:-mt-10'>We Love Being <br />Appreciated.</h1>
                     </div>
-                    <div className='col-span-2 relative p-20'>
+                    <div className='col-span-2 relative xl:p-20 p-5'>
                         <div>
                             <div className='swiper-pagination-testimonial'></div>
                         </div>

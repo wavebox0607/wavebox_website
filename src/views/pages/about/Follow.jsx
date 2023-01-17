@@ -8,7 +8,7 @@ import { FaYoutube } from 'react-icons/fa';
 const Follow = () => {
     return (
         <div className='bg-white text-black'>
-            <div className='xl:max-w-[1200px] mx-auto pt-20 pb-24'>
+            <div className='xl:max-w-[1200px] px-5 mx-auto pt-20 pb-24'>
                 <div className='text-center mb-5'>
                     <h1 className='text-lg font-medium text-gray-700 tracking-wider'>Say Hello To <span className='tracking-widest font-bold'>WAVE BOX</span> !</h1>
                 </div>

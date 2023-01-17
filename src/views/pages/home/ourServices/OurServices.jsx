@@ -14,7 +14,7 @@ const OurServices = () => {
     return (
         <div className='bg-black text-white py-20'>
             <style>{styleCss}</style>
-            <div className='xl:max-w-[1200px] mx-auto relative'>
+            <div className='xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative'>
                 <div className='flex gap-3 items-center'>
                     <div className='flex items-center'>
                         <p className='bg-gray-300 h-1 w-1 rounded-full'></p>
@@ -27,7 +27,7 @@ const OurServices = () => {
                     <h1 className='text-5xl font-semibold mt-5 leading-[50px] mb-20'>IT Service Provider</h1>
                 </div>
 
-                <div className='grid grid-cols-4 gap-y-2'>
+                <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-y-2'>
                     <div className='group h-full w-full text-center p-10'>
                         <img src={img1} alt="" className='h-20 mx-auto mb-5' />
                         <h1 className='mb-8 text-2xl font-bold'>WEBSITE <br />DEVELOPMENT</h1>

@@ -72,7 +72,7 @@ const Home = () => {
   return (
     <div ref={app} className="App">
       <div ref={scrollContainer} className="scroll">
-        <SliderMain />
+        {/* <SliderMain /> */}
         <Experience />
         <OurServices />
         <ParallaxSection />

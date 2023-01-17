@@ -5,8 +5,8 @@ const Footer = () => {
   let date =  new Date().getFullYear();
 
   return (
-    <div className='bg-[#090909] text-white pt-40 pb-20 relative h-full w-full'>
-      <div className='grid grid-cols-4 xl:max-w-[1200px] mx-auto border-b-[.5px] pb-10 border-gray-700'>
+    <div className='bg-[#090909] text-white xl:pt-40 pt-10 pb-20 relative h-full w-full'>
+      <div className='grid grid-cols-1 xl:grid-cols-4 gap-y-3 xl:max-w-[1200px] px-5 xl:px-0 mx-auto border-b-[.5px] pb-10 border-gray-700'>
         <div></div>
         <div>
           <div className='relative pb-5'>
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='xl:max-w-[1200px] text-[#717171] font-semibold mx-auto pt-5'>
+      <div className='xl:max-w-[1200px] px-5 xl:px-0 text-[#717171] font-semibold mx-auto pt-5'>
         <p>{date} © Wave Box</p>
       </div>
     </div>

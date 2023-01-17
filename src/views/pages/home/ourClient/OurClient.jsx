@@ -63,7 +63,7 @@ const OurClient = () => {
     return (
         <div className='bg-black text-white py-20'>
             <style>{styleCss}</style>
-            <div className='xl:max-w-[1200px] mx-auto relative'>
+            <div className='xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative'>
                 <div className='flex gap-3 items-center'>
                     <div className='flex items-center'>
                         <p className='bg-gray-300 h-1 w-1 rounded-full'></p>
@@ -73,7 +73,7 @@ const OurClient = () => {
                 </div>
 
                 <div>
-                    <h1 className='text-5xl font-semibold mt-5 leading-[50px] mb-20'>Your successful, our<br /> reputation</h1>
+                    <h1 className='xl:text-5xl text-4xl font-semibold mt-5 leading-[50px] mb-20'>Your successful, our<br className='xl:block hidden' /> reputation</h1>
                 </div>
 
                 <div>
@@ -81,7 +81,7 @@ const OurClient = () => {
                 </div>
 
                 <Swiper
-                    slidesPerView={4}
+                    // slidesPerView={4}
                     loop={true}
                     autoplay={{
                         delay: 1000,
@@ -92,6 +92,24 @@ const OurClient = () => {
                     pagination={pagination}
                     modules={[FreeMode, Pagination, Autoplay]}
                     className="mySwiper flex justify-between"
+                    breakpoints= {{
+                        300: {
+                          slidesPerView: 2,
+                          spaceBetween: 10,
+                        },
+                        640: {
+                          slidesPerView:3,
+                          spaceBetween: 10,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 20,
+                        },
+                        1024: {
+                          slidesPerView: 4,
+                          spaceBetween: 30,
+                        },
+                      }}
                 >
                     <SwiperSlide><img src={img6} alt="" className='h-48 w-full' /></SwiperSlide>
                     <SwiperSlide><img src={img1} alt="" className='h-48 w-full' /></SwiperSlide>
