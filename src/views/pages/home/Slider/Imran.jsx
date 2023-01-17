@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiRightArrowAlt } from 'react-icons/bi';
 import { BsDot } from 'react-icons/bs';
-import img1 from "../../../../assets/images/project/imran.jpeg";
+import img1 from "../../../../assets/images/project/Imran.jpg";
 
 const Imran = () => {
     return (

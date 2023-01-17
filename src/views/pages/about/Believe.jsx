@@ -5,7 +5,7 @@ const Believe = () => {
         <div className='bg-[#282828] text-black w-full h-full p-10'>
             <div className='bg-white'>
                 <div className='xl:max-w-[1200px] px-5 mx-auto pt-20 pb-24'>
-                    <div className='grid grid-cols-1 xl:grid-cols-2  gap-y-3 xl:gap-y-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2  gap-y-3 xl:gap-y-10'>
                         <div className=''>
                             <h1 className='text-center text-4xl xl:text-7xl '>WE BELIEVE</h1>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../../../assets/images/project/Adis.jpg";
+import img1 from "../../../../assets/images/project/adis.jpg";
 import { BiRightArrowAlt } from 'react-icons/bi';
 
 

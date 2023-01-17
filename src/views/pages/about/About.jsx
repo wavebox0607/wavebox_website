@@ -81,8 +81,8 @@ const About = () => {
           <style>{styleCss}</style>
           <div className={`about-bg w-full pb-24 mb-10`}>
             <div className='xl:max-w-[1200px] mx-auto pt-32 xl:pt-60 px-5'>
-              <div className='grid grid-cols-1 xl:grid-cols-2 gap-y-3 xl:gap-y-10 '>
-                <div><h1 className='text-4xl xl:text-7xl font-bold text-[#930D21] text-shadow-title xl:text-left text-center'>BRAND STORY</h1></div>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-y-3 md:gap-y-10 '>
+                <div><h1 className='text-4xl md:text-5xl xl:text-7xl font-bold text-[#930D21] text-shadow-title xl:text-left text-center'>BRAND STORY</h1></div>
                 <div></div>
                 <div></div>
                 <div>
@@ -94,8 +94,8 @@ const About = () => {
 
           <div className={`about-bg w-full`}>
             <div className='xl:max-w-[1200px] mx-auto pt-20 pb-24 px-5'>
-              <h1 className='text-4xl xl:text-7xl font-bold text-[#930D21] text-shadow-title xl:text-left text-center'>ABOUT WAVEBOX</h1>
-              <div className='grid grid-cols-1 xl:grid-cols-2'>
+              <h1 className='text-4xl md:text-5xl xl:text-7xl font-bold text-[#930D21] text-shadow-title xl:text-left text-center'>ABOUT WAVEBOX</h1>
+              <div className='grid grid-cols-1 md:grid-cols-2'>
                 <div></div>
                 <div className='mt-20 w-full text-justify text-[#616161] leading-relaxed font-semibold text-sm'>
                   <div className='mb-5 relative font-bold text-3xl text-black w-max'>

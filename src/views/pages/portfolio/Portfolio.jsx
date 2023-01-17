@@ -17,6 +17,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { portfolio } from './PortfolioData.js';
 import { BsDot } from "react-icons/bs";
 import ProjectDetails from "./project/ProjectDetails.jsx";
+import Footer from "../common/Footer.jsx";
 
 const Portfolio = () => {
 
@@ -24,7 +25,7 @@ const Portfolio = () => {
     let [modal, setModal] = useState(false)
     let [id, setId] = useState()
 
-    console.log(isOpen,"isOpen");
+    console.log(isOpen, "isOpen");
 
     setTimeout(() => {
         if (isOpen === true) {
@@ -63,7 +64,7 @@ const Portfolio = () => {
     .swiper-pagination-portfolio {
       position: fixed;
       font-size: 14px;
-      padding: 60px 5px;
+      padding: 90px 5px;
       color: white;
       font-weight: 600;
       left: auto !important;
@@ -108,7 +109,7 @@ const Portfolio = () => {
   }
     `
     return (
-        <div>
+        <div className="App">
             <div className="overflow-hidden relative">
                 <style>{styleCss}</style>
 
@@ -146,7 +147,7 @@ const Portfolio = () => {
                             <SwiperSlide key={items?.id}>
                                 <div className="relative text-white">
                                     <img src={items?.image} alt="" className="h-[100vh] w-full" />
-                                    <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2 max-w-[700px]">
+                                    <div className="absolute z-[2] left-10 lg:left-[20%] top-1/2 -translate-y-1/2 max-w-[700px] px-5">
                                         <div className="flex items-center gap-3 mb-3">
                                             <p className="text-gray-100 text-sm font-semibold tracking-widest">{items?.design}{items?.design && <BsDot className='text-red-700 inline' />}{items?.date}</p>
                                         </div>
@@ -167,7 +168,10 @@ const Portfolio = () => {
                         )
                     }
                 </Swiper>
+
+
             </div>
+            <Footer />
 
             {/* <div>
                 <div className='swiper-scrollbar-portfolio'></div>

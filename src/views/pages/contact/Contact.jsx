@@ -69,7 +69,7 @@ const Contact = () => {
 
           {/* message  */}
 
-          <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 px-5 xl:px-0 xl:max-w-[1200px] mx-auto py-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-5 xl:px-0 xl:max-w-[1200px] mx-auto py-10'>
             <div className='bg-[#090909] xl:p-10 p-3'>
               <h1 className='text-4xl font-bold pb-5'>Start a new project?</h1>
               <p className='font-semibold text-[#B0B0B0]'>If you have any quarries please send us a mail, A WAVE BOX representative will contact you shortly after receiving your request or you can also call our support number.</p>
@@ -116,11 +116,11 @@ const Contact = () => {
 
 
           <div className='bg-black py-20 text-white'>
-            <div className='xl:py-24 py-5 relative group'>
+            <div className='md:py-24 py-5 relative group'>
               <div className='bg-[#090909] absolute top-0 w-full xl:group-hover:w-0 xl:group-hover:right-0 right-0 duration-1000 bottom-0 z-[1] '></div>
               <div className='flex justify-between items-center xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative z-[2]'>
                 <div>
-                  <p className='xl:text-5xl text-3xl font-semibold leading-[60px]'>NEWS FEED</p>
+                  <p className='md:text-5xl text-3xl font-semibold leading-[60px]'>NEWS FEED</p>
                 </div>
                 <div>
                   <p className='font-medium group-hover:underline underline-offset-4'>See More News</p>

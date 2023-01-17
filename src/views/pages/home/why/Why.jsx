@@ -3,7 +3,7 @@ import { IoIosArrowDroprightCircle } from 'react-icons/io'
 
 const Why = () => {
     return (
-        <div className='bg-black'>
+        <div className='bg-black px-5 xl:px-0'>
             <div className='bg-[#090909] xl:max-w-[1200px] mx-auto p-10 -mt-20 relative z-[1]'>
                 <h1 className='text-white text-5xl font-bold'>Why Choose Us?</h1>
                 <div className='text-[#717171] font-bold mt-10'>
