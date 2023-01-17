@@ -16,6 +16,7 @@
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
+    "react-scroll-parallax": "^3.3.2",
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.7",
     "slick-carousel": "^1.8.1",
