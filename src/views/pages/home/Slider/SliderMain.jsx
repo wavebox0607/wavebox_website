@@ -1,10 +1,10 @@
 import React, { useState, Fragment } from "react";
 // import Slider from "react-slick";
-import img1 from '../../../../assets/images/slider1.jpg'
-import img2 from '../../../../assets/images/slider2.jpg'
-import img3 from '../../../../assets/images/slider3.jpeg'
-import img4 from '../../../../assets/images/slider4.jpeg'
-import img5 from '../../../../assets/images/slider5.svg'
+import img1 from '../../../../assets/images/slider/slider1.jpg'
+import img2 from '../../../../assets/images/slider/rong.jpg'
+import img3 from '../../../../assets/images/slider/adis.jpg'
+import img4 from '../../../../assets/images/slider/Imran.jpg'
+import img5 from '../../../../assets/images/slider/innokids.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation, Controller, EffectCreative, EffectFade } from 'swiper';
 
@@ -54,8 +54,8 @@ const SliderMain = () => {
         },
     };
 
-    const prevEl = 'best-product-prev'
-    const nextEl = 'best-product-next'
+    const prevEl = 'slider-prev'
+    const nextEl = 'slider-next'
 
 
     const styleCss = `
@@ -122,18 +122,19 @@ const SliderMain = () => {
                 }}
                 modules={[Pagination, Autoplay, Navigation, Controller, EffectCreative, EffectFade]}
                 className="mySwiper relative">
+
                 <SwiperSlide>
                     <div className="relative">
-                        <img src={img1} alt="" className="h-[100vh] w-full" />
+                        <img src={img1} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img1} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-gray-400 text-sm font-semibold tracking-widest">PASSION MEETS PROFESSION</p>
                             </div>
                             <div>
-                                <h1 className="text-white text-6xl font-bold">Welcome To WAVE BOX</h1>
+                                <h1 className="text-white text-5xl sm:text-6xl font-bold">Welcome To WAVE BOX</h1>
                             </div>
                             {/* <div onClick={() => { setIsOpen(!isOpen); setTitle('wavebox') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
                                 <IoIosArrowDroprightCircle className="text-white text-3xl" />
@@ -143,18 +144,44 @@ const SliderMain = () => {
                         <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="relative">
-                        <img src={img2} alt="" className="h-[100vh] w-full" />
+                        <img src={img2} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
                             </div>
                             <div>
-                                <h1 className="text-white text-6xl font-bold">Adis BD</h1>
+                                <h1 className="text-white text-5xl sm:text-6xl font-bold">Bishworang</h1>
+                            </div>
+                            <div>
+                                <p className="text-white text-sm font-bold mt-8">Wave Box- June 19th 2022</p>
+                            </div>
+                            <div onClick={() => { setIsOpen(!isOpen); setTitle('adis') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
+                                <IoIosArrowDroprightCircle className="text-white text-3xl" />
+                                <p className="tracking-[4px] text-white font-semibold text-xs">VIEW CASE</p>
+                            </div>
+                        </div>
+                        <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="relative">
+                        <img src={img3} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
+                        {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
+                        </Parallax> */}
+                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                            <div className="flex items-center gap-3 mb-8">
+                                <p className="w-12 h-[2px] bg-gray-700"></p>
+                                <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
+                            </div>
+                            <div>
+                                <h1 className="text-white text-5xl sm:text-6xl font-bold">Adis BD</h1>
                             </div>
                             <div>
                                 <p className="text-white text-sm font-bold mt-8">Wave Box- October 19th 2017</p>
@@ -167,42 +194,19 @@ const SliderMain = () => {
                         <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="relative">
-                        <img src={img5} alt="" className="h-[100vh] w-full" />
-                        {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
-                        </Parallax> */}
-                        <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
-                                <p className="w-12 h-[2px] bg-gray-700"></p>
-                                <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
-                            </div>
-                            <div>
-                                <h1 className="text-white text-6xl font-bold">Adis BD</h1>
-                            </div>
-                            <div>
-                                <p className="text-white text-sm font-bold mt-8">Wave Box- October 19th 2017</p>
-                            </div>
-                            <div onClick={() => { setIsOpen(!isOpen); setTitle('adis') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
-                                <IoIosArrowDroprightCircle className="text-white text-3xl" />
-                                <p className="tracking-[4px] text-white font-semibold text-xs">VIEW CASE</p>
-                            </div>
-                        </div>
-                        <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="relative">
-                        <img src={img3} alt="" className="h-[100vh] w-full" />
+                        <img src={img4} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img3} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Portfolio Website</p>
                             </div>
                             <div>
-                                <h1 className="text-white text-6xl font-bold">Imran Shakha</h1>
+                                <h1 className="text-white text-5xl sm:text-6xl font-bold">Imran Shakha</h1>
                             </div>
                             <div>
                                 <p className="text-white text-sm font-bold mt-8">Wave Box- September 26th 2017</p>
@@ -215,18 +219,19 @@ const SliderMain = () => {
                         <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="relative">
-                        <img src={img4} alt="" className="h-[100vh] w-full" />
+                        <img src={img5} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img4} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] left-60 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Organizational Website</p>
                             </div>
                             <div>
-                                <h1 className="text-white text-6xl font-bold">InnoKids</h1>
+                                <h1 className="text-white text-5xl sm:text-6xl font-bold">InnoKids</h1>
                             </div>
                             <div>
                                 <p className="text-white text-sm font-bold mt-8">Wave Box- October 19th 2017</p>
@@ -239,6 +244,7 @@ const SliderMain = () => {
                         <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
                     </div>
                 </SwiperSlide>
+
             </Swiper>
 
             <Transition show={isOpen} as={Fragment} >

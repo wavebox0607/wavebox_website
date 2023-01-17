@@ -47,7 +47,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className='flex justify-between px-10 py-3 fixed w-full z-[5] top-0'>
+            <div className='flex justify-between px-6 xl:px-10 py-3 fixed w-full z-[5] top-0'>
                 <div>
                     <NavLink to="/"><img src={logo} alt="" className='h-14' /></NavLink>
                 </div>
@@ -67,8 +67,8 @@ const Header = () => {
 
                 {open &&
                     <div className='relative'>
-                        <div onClick={() => setOpen(!open)} className="fixed top-10 right-10 lg:cursor-pointer z-[6] bg-black text-white rounded-full w-10 h-10 flex justify-center items-center"><AiOutlineClose className="text-3xl" /></div>
-                        <div onClick={() => setOpen(!open)} className='fixed m-0 h-full overflow-y-hidden top-0 left-0 bottom-0 right-0 bg-black text-gray-300 font-medium text-5xl z-[5]  flex flex-col justify-center gap-y-5 pl-40 '>
+                        <div onClick={() => setOpen(!open)} className="fixed top-3 right-6 xl:right-10 lg:cursor-pointer z-[6] bg-black text-white rounded-full w-10 h-10 flex justify-center items-center"><AiOutlineClose className="text-3xl" /></div>
+                        <div onClick={() => setOpen(!open)} className='fixed m-0 h-full overflow-y-hidden top-0 left-0 bottom-0 right-0 bg-black text-gray-300 font-medium sm:text-5xl text-4xl z-[5]  flex flex-col justify-center gap-y-5 md:pl-40 pl-10'>
 
                             <NavLink to="/"><motion.p className="hover:text-white w-max" variants={container} initial="hidden" animate="visible">Home</motion.p></NavLink>
                             <NavLink to="/about"><motion.p className="hover:text-white w-max" variants={container} initial="hidden" animate="visible">About Us</motion.p></NavLink>

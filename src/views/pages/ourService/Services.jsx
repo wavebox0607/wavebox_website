@@ -8,7 +8,7 @@ export const services = [
     },
     {
         id: 2,
-        image: [require('../../../assets/images/WebServices/Web_App/mobile_app1.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app2.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app3.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app4.jpg')],
+        image: [require('../../../assets/images/WebServices/Web_App/mobile_app2.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app1.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app3.jpg'),require('../../../assets/images/WebServices/Web_App/mobile_app4.jpg')],
         title: 'Web Application Development',
         description: 'Hello Application',
 
@@ -22,7 +22,7 @@ export const services = [
     },
     {
         id: 4,
-        image: [require('../../../assets/images/WebServices/Social_Media/mobile_app1.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app2.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app3.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app4.jpg')],
+        image: [require('../../../assets/images/WebServices/Social_Media/mobile_app2.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app1.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app3.jpg'),require('../../../assets/images/WebServices/Social_Media/mobile_app4.jpg')],
         title: 'Social Media Marketing',
         description: 'Hello Social',
 

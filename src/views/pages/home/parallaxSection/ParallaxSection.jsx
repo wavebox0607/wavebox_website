@@ -8,8 +8,8 @@ const ParallaxSection = () => {
   return (
     <div className='relative w-full h-[100vh]'>
       <ParallaxProvider>
-        <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
-          <ParallaxBannerLayer image={img1} speed={-20} />
+        <ParallaxBanner className='aspect-[2/1] h-[100vh] w-full'>
+          <ParallaxBannerLayer image={img1} speed={-20}  />
         </ParallaxBanner>
       </ParallaxProvider>
     </div>

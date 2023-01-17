@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Thoughts = () => {
     return (
@@ -9,9 +10,9 @@ const Thoughts = () => {
                     <div>
                         <p className='xl:text-5xl text-4xl font-semibold xl:leading-[60px]'>SHARE YOUR <br className='xl:block hidden' /> THOUGHTS</p>
                     </div>
-                    <div>
+                    <NavLink to="/contact"><div>
                         <p className='font-medium group-hover:underline underline-offset-4'>Feel Free To Contact Us!</p>
-                    </div>
+                    </div></NavLink>
                 </div>
             </div>
         </div>

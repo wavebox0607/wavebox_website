@@ -55,9 +55,37 @@ const OurService = () => {
 
     // slider settings for image
     const settings = {
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        // infinite: true,
+        // slidesToShow: 4,
+        // slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 3000,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    // dots: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    slidesToScroll: 1
+                }
+            }
+        ],
         beforeChange: function (currentSlide, nextSlide) {
             console.log("before change", currentSlide, nextSlide);
         },
@@ -80,7 +108,7 @@ const OurService = () => {
     }
     `
     return (
-        <div>
+        <div className="App">
 
             <div className={`relative overflow-hidden`}>
                 <style>{styleCss}</style>
@@ -88,17 +116,17 @@ const OurService = () => {
                 {/* selected image show  */}
                 <div className='relative z-[1] w-full'>
                     <div className='h-[100vh] w-full relative'>
-                        <img src={services[0]?.image[0]} alt="" className={`h-full ${id === 0 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
-                        <img src={services[1]?.image[0]} alt="" className={`h-full ${id === 1 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
-                        <img src={services[2]?.image[0]} alt="" className={`h-full ${id === 2 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
-                        <img src={services[3]?.image[0]} alt="" className={`h-full ${id === 3 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
+                        <img src={services[0]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 0 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
+                        <img src={services[1]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 1 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
+                        <img src={services[2]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 2 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
+                        <img src={services[3]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 3 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
                         <div className='absolute top-0 left-0 z-[100] w-full'>
 
                             <Slider {...settings} ref={customeSlider} className='text-white'>
                                 {
                                     services.map((item, index) =>
                                         <div key={index} onMouseEnter={() => setId(index)} onClick={() => setAllId(item?.id)} className="bg-transparent border-r border border-white h-[100vh] relative">
-                                            <div className="absolute bottom-10 left-5 flex flex-col gap-5">
+                                            <div className="absolute bottom-10 left-5 flex flex-col gap-5 z-[3]">
                                                 <p className="text-[100px] font-bold">0{item?.id}</p>
                                                 <div>
                                                     <p className="text-[20px] font-semibold">{item?.title}</p>
@@ -106,6 +134,7 @@ const OurService = () => {
                                                 </div>
                                                 <p onClick={() => setIsOpen(!isOpen)} className="text-[20px] px-5 rounded-md py-1 bg-green-500 w-max lg:cursor-pointer">Details</p>
                                             </div>
+                                            <img src={item?.image[0]} alt="" className={`h-full left-0 w-full z-[2] top-0 absolute lg:opacity-0`} />
                                         </div>
                                     )
                                 }

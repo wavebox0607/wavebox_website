@@ -6,19 +6,19 @@ export const portfolio = [
         title: 'Adis Bd',
         description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it...', 
         client: 'Adis BD',
-        image: require ('../../../assets/images/project/Adis.jpg'),
+        image: require ('../../../assets/images/project/adis.jpg'),
         link: 'https://www.adis.com.bd/',
 
     },
     {
         id: 2,
         design: 'UI/UX, Web Development',
-        date: 'June 9, 2021',
-        title: 'InnoKids',
-        description: 'Innokids initiated its journey to focus on your kids, making them aware of life early in the age. To get rid of graduate-unemployment, we, innokids are...',
+        date: 'June 19, 2022',
+        title: 'Bishworang',
+        description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it...',
         client: 'MD. HUMAYUN KABIR', 
-        link: 'https://www.innokids.org/',
-        image: require ('../../../assets/images/project/innokids.jpg'),
+        link: 'https://www.bishworang.website/',
+        image: require ('../../../assets/images/project/rong.jpg'),
 
     },
     {
@@ -62,7 +62,7 @@ export const portfolio = [
         description: 'MAKS Engineering & Construction is one of the renowned diversified construction company in Bangladesh. The company undertakes electrical works, plumbing works, load test, piling and civil...',
         client: 'MD. HUMAYUN KABIR',
         link: 'https://www.maksgroup.net/',
-        image: require ('../../../assets/images/project/maks.png'),
+        image: require ('../../../assets/images/project/maks.jpg'),
 
     },
     {
@@ -73,7 +73,7 @@ export const portfolio = [
         description: 'GUARDIAN CARE provides senior home care that matches your loved one with the perfect Caregiver.',
         client: 'David',
         link: 'https://www.myguardian.care/',
-        image: require ('../../../assets/images/project/Guardian.jpg'),
+        image: require ('../../../assets/images/project/Gurdian-Care.jpg'),
 
     },
     {
@@ -117,7 +117,18 @@ export const portfolio = [
         description: 'I am Imran Shakha, Currently I work as a supply chain manager in BSRM.',
         client: 'IMRAN SHAKHA',
         link: 'https://www.imranshakha.com/',
-        image: require ('../../../assets/images/project/imran.jpeg'),
+        image: require ('../../../assets/images/project/Imran.jpg'),
+
+    },
+    {
+        id: 12,
+        design: 'UI/UX, Web Development',
+        date: 'June 9, 2021',
+        title: 'InnoKids',
+        description: 'Innokids initiated its journey to focus on your kids, making them aware of life early in the age. To get rid of graduate-unemployment, we, innokids are...',
+        client: 'MD. HUMAYUN KABIR', 
+        link: 'https://www.innokids.org/',
+        image: require ('../../../assets/images/project/innokids.jpg'),
 
     },
     
