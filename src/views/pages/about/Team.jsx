@@ -2,6 +2,8 @@ import React from 'react'
 import img1 from '../../../assets/images/team/team2.jpg'
 import img2 from '../../../assets/images/team/team3.jpeg'
 import img3 from '../../../assets/images/team/team4.jpg'
+// import img3 from '../../../assets/images/team/team4.jpg'
+// import img3 from '../../../assets/images/team/team4.jpg'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -70,3 +72,11 @@ const Team = () => {
 }
 
 export default Team
+
+const team = [
+    {
+        image: img1,
+        name: 'Hasib Ahmed Soyad',
+        title: 'Founder & CEO'
+    },
+]
