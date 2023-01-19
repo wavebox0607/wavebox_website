@@ -73,7 +73,7 @@ const OurClient = () => {
                 </div>
 
                 <div>
-                    <h1 className='xl:text-5xl text-4xl font-semibold mt-5 leading-[50px] mb-20'>Your successful, our<br className='xl:block hidden' /> reputation</h1>
+                    <h1 className='md:text-5xl text-3xl font-semibold mt-5 leading-[50px] mb-20'>Your successful, our<br className='xl:block hidden' /> reputation</h1>
                 </div>
 
                 <div>

@@ -63,9 +63,9 @@ const Testimonial = () => {
         <div className='bg-black pb-20 pt-28'>
             <style>{styleCss}</style>
             <div className='xl:max-w-[1200px] mx-auto relative bg-[#090909] xl:h-96'>
-                <div className='grid grid-cols-2 xl:grid-cols-3 text-white'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 text-white py-5 lg:py-0'>
                     <div className='col-span-1'>
-                        <h1 className='text-4xl font-bold ml-5 xl:ml-10 xl:-mt-10'>We Love Being <br />Appreciated.</h1>
+                        <h1 className=' md:text-4xl text-3xl font-bold ml-5 xl:ml-10 xl:-mt-10'>We Love Being <br />Appreciated.</h1>
                     </div>
                     <div className='col-span-2 relative xl:p-20 p-5'>
                         <div>

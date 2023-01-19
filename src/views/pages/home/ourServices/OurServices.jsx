@@ -12,7 +12,7 @@ const OurServices = () => {
 
     `
     return (
-        <div className='bg-black text-white py-20'>
+        <div className='bg-black text-white md:py-20 py-10'>
             <style>{styleCss}</style>
             <div className='xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative'>
                 <div className='flex gap-3 items-center'>
@@ -24,7 +24,7 @@ const OurServices = () => {
                 </div>
 
                 <div>
-                    <h1 className='text-5xl font-semibold mt-5 leading-[50px] mb-20'>IT Service Provider</h1>
+                    <h1 className=' md:text-5xl text-3xl font-semibold mt-5 leading-[50px] mb-20'>IT Service Provider</h1>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>

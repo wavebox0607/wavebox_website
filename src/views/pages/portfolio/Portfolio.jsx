@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay, Navigation, Controller, EffectCreative, EffectFade, Mousewheel, Scrollbar } from 'swiper';
 
@@ -23,25 +23,31 @@ const Portfolio = () => {
 
     let [isOpen, setIsOpen] = useState(false)
     let [modal, setModal] = useState(false)
-    let [id, setId] = useState()
+    let [id, setId] = useState(0)
+    const [open, setOpen] = useState(true)
 
-    console.log(isOpen, "isOpen");
+    // console.log(isOpen, "isOpen");
 
-    setTimeout(() => {
-        if (isOpen === true) {
-            setModal(true)
-        }
-        else {
-            setModal(false)
-        }
-    }, 200);
+    useEffect(() => {
+        setTimeout(() => {
+            if (isOpen === true) {
+                setModal(true)
+            }
+            else {
+                setModal(false)
+            }
+        }, 200);
 
-    // if (isOpen === false) {
-    //     document.body.style.overflow = 'hidden';
-    // }
-    // else {
-    //     document.body.style.overflow = 'unset';
-    // }
+
+
+    }, [isOpen])
+
+    if (open === true) {
+        document.body.style.overflow = 'hidden';
+    }
+    else {
+        document.body.style.overflow = 'unset';
+    }
 
 
     const pagination = {
@@ -113,7 +119,7 @@ const Portfolio = () => {
             <div className="overflow-hidden relative">
                 <style>{styleCss}</style>
 
-                <div className='flex gap-2 cursor-pointer absolute right-20 bottom-5 z-10'>
+                <div className='flex gap-2 cursor-pointer absolute md:right-20 right-8 bottom-5 z-10'>
                     <div className={`${prevEl} hover:border h-10 w-10 rounded-full flex justify-center items-center`}>
                         <IoIosArrowBack className='text-xl text-white' />
                     </div>
@@ -138,31 +144,33 @@ const Portfolio = () => {
                         delay: 2000
                     }}
                     modules={[Pagination, Autoplay, Navigation, Controller, EffectCreative, EffectFade, Mousewheel, Scrollbar]}
-                    className="mySwiper relative">
+                    className="mySwiper relative ">
                     <div>
                         <div className='swiper-pagination-portfolio'></div>
                     </div>
                     {
                         portfolio.map((items, index) =>
                             <SwiperSlide key={items?.id}>
-                                <div className="relative text-white">
-                                    <img src={items?.image} alt="" className="h-[100vh] w-full" />
-                                    <div className="absolute z-[2] left-10 lg:left-[20%] top-1/2 -translate-y-1/2 max-w-[700px] px-5">
+                                <div className="relative text-white h-[100vh] bg-black">
+                                    <img src={items?.image} alt="" className="md:h-[100vh] h-[50vh] w-full" />
+                                    <div className="md:absolute z-[2] md:left-10 lg:left-[20%] md:top-1/2 md:-translate-y-1/2 md:max-w-[700px] pl-5 pr-8 md:mt-0 h-full md:h-max bg-gradient-to-t from-black to-[#19181C] md:bg-gradient-to-t md:from-transparent md:to-transparent w-full pt-10 relative ">
                                         <div className="flex items-center gap-3 mb-3">
                                             <p className="text-gray-100 text-sm font-semibold tracking-widest">{items?.design}{items?.design && <BsDot className='text-red-700 inline' />}{items?.date}</p>
                                         </div>
                                         <div>
-                                            <h1 className="text-white text-6xl font-bold">{items?.title}</h1>
+                                            <h1 className="text-white text-2xl sm:text-4xl md:text-6xl font-bold">{items?.title}</h1>
                                         </div>
                                         <div className="text-gray-300 py-5">
-                                            <p className="text-lg font-medium">{items?.description}</p>
+                                            <p className="md:text-lg text-sm font-medium">{items?.description.slice(0,100)}{items?.description?.length > 100 && '...'}</p>
                                         </div>
-                                        <div onClick={() => { setIsOpen(!isOpen); setId(index) }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max hover:scale-x-105 duration-700">
+                                        <div onClick={() => { setIsOpen(!isOpen); setId(index) }} className="flex items-center lg:cursor-pointer gap-2 sm:gap-5 md:px-10 px-4 py-3 border rounded-full w-max hover:scale-x-105 duration-700">
                                             <IoIosArrowDroprightCircle className="text-white text-3xl" />
-                                            <p className="tracking-[4px] text-white font-semibold text-xs uppercase">Show Project</p>
+                                            <p className="sm:tracking-[4px] text-white font-semibold text-xs uppercase">Show Project</p>
                                         </div>
                                     </div>
-                                    <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
+                                    <p className="bg-black md:absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p>
+                                    <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-20"></p>
+                                    <p className="bg-gradient-to-t from-[#19181C] to-transparent absolute md:hidden block top-1/2 left-0 -translate-y-[90%] right-0 z-[2] h-20"></p>
                                 </div>
                             </SwiperSlide>
                         )

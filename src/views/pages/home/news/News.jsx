@@ -71,7 +71,7 @@ const News = () => {
                 </div>
 
                 <div>
-                    <h1 className='xl:text-5xl text-4xl font-semibold mt-5 leading-[50px] mb-20'>Posts & Forums</h1>
+                    <h1 className='md:text-5xl text-3xl font-semibold mt-5 leading-[50px] mb-20'>Posts & Forums</h1>
                 </div>
 
                 <div>

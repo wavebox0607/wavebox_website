@@ -6,7 +6,7 @@ import img2 from '../../../../assets/images/team/team2.jpg'
 const TeamTwo = () => {
     return (
         <div className='bg-black py-20 text-white'>
-            <div className='py-24 relative'>
+            <div className='lg:py-24 py-10 relative'>
                 <div className='xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative '>
                     <div className='flex gap-3 items-center'>
                         <div className='flex items-center'>
@@ -16,12 +16,12 @@ const TeamTwo = () => {
                         <h1 className='uppercase text-[#AAAAAA] text-sm font-semibold'>Our Team</h1>
                     </div>
                     <div>
-                        <h1 className='xl:text-5xl text-4xl font-semibold mt-5 leading-[50px] mb-20'>The best team ever!</h1>
+                        <h1 className=' md:text-5xl text-3xl font-semibold mt-5 leading-[50px] mb-20'>The best team ever!</h1>
                     </div>
 
-                    <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 w-full relative'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-full relative'>
                         <div className='group'>
-                            <div className='xl:h-[700px] h-[400px] overflow-hidden'>
+                            <div className='xl:h-[700px] lg:h-[550px]  md:h-[500px] h-[400px] overflow-hidden'>
                                 <img src={img1} alt="" className='h-full w-full group-hover:scale-100 scale-105 group-hover:blur-[2px] duration-700' />
                             </div>
                             <div className='lg:group-hover:ml-4 duration-700'>
@@ -30,7 +30,7 @@ const TeamTwo = () => {
                             </div>
                         </div>
                         <div className='group'>
-                            <div className='xl:h-[700px] h-[400px] overflow-hidden'>
+                            <div className='xl:h-[700px] lg:h-[550px] md:h-[500px] h-[400px] overflow-hidden'>
                                 <img src={img2} alt="" className='h-full w-full group-hover:scale-100 scale-105 group-hover:blur-[2px] duration-700' />
                             </div>
                             <div className='group-hover:ml-4 duration-700'>

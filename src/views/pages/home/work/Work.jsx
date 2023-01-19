@@ -74,7 +74,7 @@ const Work = () => {
                 </div>
 
                 <div>
-                    <h1 className='text-5xl font-semibold mt-5 leading-[50px] mb-20'>Creative Portfolio Designs</h1>
+                    <h1 className=' md:text-5xl text-3xl font-semibold mt-5 leading-[50px] mb-20'>Creative Portfolio Designs</h1>
                 </div>
             </div>
 

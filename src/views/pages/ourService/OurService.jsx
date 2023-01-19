@@ -25,7 +25,17 @@ const OurService = () => {
                 setAllId(0)
             }
         }, 200);
+
     }, [isOpen])
+
+    if (id) {
+        document.body.style.overflow = 'hidden';
+    }
+    else {
+        document.body.style.overflow = 'unset';
+    }
+
+
 
 
     const handleClickScroll = () => {
@@ -108,7 +118,7 @@ const OurService = () => {
     }
     `
     return (
-        <div className="App">
+        <div className="App hello">
 
             <div className={`relative overflow-hidden`}>
                 <style>{styleCss}</style>
