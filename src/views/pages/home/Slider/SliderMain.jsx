@@ -128,7 +128,7 @@ const SliderMain = () => {
                         <img src={img1} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img1} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-gray-400 text-sm font-semibold tracking-widest">PASSION MEETS PROFESSION</p>
@@ -150,7 +150,7 @@ const SliderMain = () => {
                         <img src={img2} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
@@ -175,7 +175,7 @@ const SliderMain = () => {
                         <img src={img3} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
@@ -200,7 +200,7 @@ const SliderMain = () => {
                         <img src={img4} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img3} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Portfolio Website</p>
@@ -225,7 +225,7 @@ const SliderMain = () => {
                         <img src={img5} alt="" className="md:h-[100vh] min-h-[400px] w-full" />
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img4} bgImageAlt="image" strength={300}>
                         </Parallax> */}
-                        <div className="absolute z-[2] lg:left-60 left-5 top-1/2 -translate-y-1/2">
+                        <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
                             <div className="flex items-center gap-3 mb-8">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Organizational Website</p>

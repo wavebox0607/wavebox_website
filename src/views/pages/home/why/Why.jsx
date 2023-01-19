@@ -5,7 +5,7 @@ const Why = () => {
     return (
         <div className='bg-black px-5 xl:px-0'>
             <div className='bg-[#090909] xl:max-w-[1200px] mx-auto p-10 -mt-20 relative z-[1]'>
-                <h1 className='text-white text-5xl font-bold'>Why Choose Us?</h1>
+                <h1 className='text-white  md:text-5xl text-3xl font-bold'>Why Choose Us?</h1>
                 <div className='text-[#717171] font-bold mt-10'>
                     <p className='mb-5'>If you are looking for a website developer firm who can handle online marketing from design through development and into ongoing promotion, we will the best selection to be your partner.
                     </p>
