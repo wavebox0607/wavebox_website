@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,7 +20,9 @@
     "react-scroll-parallax": "^3.3.2",
     "react-slick": "^0.29.0",
     "react-spinners": "^0.13.7",
+    "react-toastify": "^9.1.1",
     "slick-carousel": "^1.8.1",
+    "sweetalert-react": "^0.4.11",
     "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
   },

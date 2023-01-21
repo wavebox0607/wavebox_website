@@ -1,8 +1,25 @@
 import React, { useEffect, useRef } from 'react'
+import { toast, ToastContainer } from 'react-toastify';
 import useWindowSize from '../../hooks/useWindowSize';
 import Footer from '../common/Footer'
+import emailjs from '@emailjs/browser';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+  // contact email 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_wqv2gkc', 'template_tcs25kr', form.current, '_aL2VMizlJzAnT9ii')
+    e.target.reset();
+    // alert('Message Successfully Send');
+    toast("Message Successfully Send", { type: 'success' })
+    window.scrollTo(0, 0);
+
+  };
+
   //Hook to grab window size
   const size = useWindowSize();
 
@@ -55,9 +72,11 @@ const Contact = () => {
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());
   };
+
   return (
     <div ref={app} className="App">
       <div ref={scrollContainer} className="scroll">
+        <ToastContainer />
         <div className='bg-black text-white pt-40'>
           <div className='flex items-center gap-10 xl:pl-60 pl-5'>
             <p className='w-24 p-[1px] bg-white'></p>
@@ -92,28 +111,31 @@ const Contact = () => {
             {/* comment  */}
             <div>
               <h1 className='text-4xl font-bold mb-10'>Write A Comment</h1>
-
-              <div className='flex flex-col gap-10 placeholder:text-[#B0B0B0] font-semibold text-sm'>
+              <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10 placeholder:text-[#B0B0B0] font-semibold text-sm'>
                 <div className='flex items-center gap-10 border-b border-dotted border-[#717171] pb-3'>
                   <p>Name?</p>
-                  <input className='border-0 outline-none bg-transparent' type="text" placeholder='Type your name' />
+                  <input className='border-0 outline-none bg-transparent' name="name" type="text" placeholder='Type your name' required />
                 </div>
                 <div className='flex items-center gap-10 border-b border-dotted border-[#717171] pb-3'>
                   <p>E-mail?</p>
-                  <input className='border-0 outline-none bg-transparent' type="text" placeholder='Type your Email Address' />
+                  <input className='border-0 outline-none bg-transparent' name="email" type="email" placeholder='Type your Email Address' required />
+                </div>
+                <div className='flex items-center gap-10 border-b border-dotted border-[#717171] pb-3'>
+                  <p>Subject</p>
+                  <input className='border-0 outline-none bg-transparent' name="subject" type="text" placeholder='Type your Subject' required />
                 </div>
                 <div className='flex gap-10 border-b border-dotted border-[#717171] pb-3 w-full'>
                   <p className='w-40'>What's up</p>
-                  <textarea className='border-0 outline-none bg-transparent w-full h-24' type="text" placeholder='Tell us about you and the world' />
+                  <textarea className='border-0 outline-none bg-transparent w-full h-24' name="message" type="text" placeholder='Tell us about you and the world' required />
                 </div>
-              </div>
+                <div>
+                  <button type='submit' className='text-sm font-medium tracking-[5px] mt-10 border py-4 rounded-md hover:scale-x-105 duration-700 px-10 bg-transparent border-white text-white'>SEND MESSAGE</button>
+                </div>
+              </form>
 
-              <div>
-                <button className='text-sm font-medium tracking-[5px] mt-10 border py-4 rounded-md hover:scale-x-105 duration-700 px-10 bg-transparent border-white text-white'>SEND MESSAGE</button>
-              </div>
+
             </div>
           </div>
-
 
           <div className='bg-black py-20 text-white'>
             <div className='md:py-24 py-5 relative group'>
