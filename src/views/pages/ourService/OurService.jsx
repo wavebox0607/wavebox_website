@@ -15,6 +15,7 @@ const OurService = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [modal, setModal] = useState(false)
 
+
     useEffect(() => {
         setTimeout(() => {
             if (isOpen === true) {
@@ -23,17 +24,18 @@ const OurService = () => {
             else {
                 setModal(false)
                 setAllId(0)
+
             }
         }, 200);
 
     }, [isOpen])
 
-    if (id) {
-        document.body.style.overflow = 'hidden';
-    }
-    else {
-        document.body.style.overflow = 'unset';
-    }
+    // if (id) {
+    //     document.body.style.overflow = 'hidden';
+    // }
+    // else {
+    //     document.body.style.overflow = 'unset';
+    // }
 
 
 
@@ -103,6 +105,9 @@ const OurService = () => {
             console.log("after change", currentSlide);
         }
     };
+
+    const result = services.filter(item => item?.id !== allId)
+    // console.log(result, "result");
 
     const styleCss = `
     .icon-color:hover {
@@ -200,20 +205,26 @@ const OurService = () => {
                                 {/* The actual dialog panel  */}
                                 <div onClick={() => setIsOpen(!isOpen)} className="fixed top-10 right-10 lg:cursor-pointer z-[3] bg-black text-white rounded-full w-10 h-10 flex justify-center items-center"><AiOutlineClose className="text-3xl" /></div>
                                 <Dialog.Panel className={`mx-auto h-[100vh] min-w-full rounded bg-black text-white overflow-y-auto`}>
-                                    <div id="section-1" className="grid grid-cols-4 py-10 px-10 xl:py-20 xl:px-40 gap-10 h-full w-full" >
+                                    <div id="section-1" className="grid grid-cols-4 py-10 px-5 xl:py-20 xl:px-40 gap-10 h-full w-full" >
                                         <div className="xl:col-span-3 col-span-4">
-                                            <ServiceDetails item={services[id]} />
+
+                                            {services.map(item =>
+                                                <div>
+                                                    {item.id === allId && <ServiceDetails item={item} />}
+                                                </div>
+                                            )}
+
                                         </div>
                                         <div className='xl:col-span-1 col-span-4'>
-                                            <div className='grid grid-cols-3 xl:grid-cols-1 gap-x-5'>
+                                            <div className='grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-x-5'>
                                                 {
-                                                    services.map((item, index) =>
+                                                    result.map((item, index) =>
                                                         <div key={item?.id} className="" onClick={handleClickScroll}>
-                                                            {item?.id === allId ? <div className="hidden"></div> : <div onClick={() => { setId(index); setAllId(item?.id); }} className="mb-10 lg:cursor-pointer">
+                                                            <div onClick={() => { setId(index); setAllId(item?.id); }} className="mb-10 lg:cursor-pointer">
                                                                 <img src={item?.image[0]} alt="" className='min-w-full h-auto' />
-                                                                <h1 className='xl:text-lg text-sm font-bold mt-3'>{item?.title}</h1>
+                                                                <h1 className='xl:text-lg sm:text-sm text-xs font-bold mt-3'>{item?.title}</h1>
                                                             </div>
-                                                            }
+
                                                         </div>
                                                     )
                                                 }

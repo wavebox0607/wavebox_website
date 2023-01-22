@@ -24,7 +24,7 @@ const Portfolio = () => {
     let [isOpen, setIsOpen] = useState(false)
     let [modal, setModal] = useState(false)
     let [id, setId] = useState(0)
-    const [open, setOpen] = useState(true)
+    // const [open, setOpen] = useState(true)
 
     // console.log(isOpen, "isOpen");
 
@@ -42,12 +42,12 @@ const Portfolio = () => {
 
     }, [isOpen])
 
-    if (open === true) {
-        document.body.style.overflow = 'hidden';
-    }
-    else {
-        document.body.style.overflow = 'unset';
-    }
+    // if (open === true) {
+    //     document.body.style.overflow = 'hidden';
+    // }
+    // else {
+    //     document.body.style.overflow = 'unset';
+    // }
 
 
     const pagination = {

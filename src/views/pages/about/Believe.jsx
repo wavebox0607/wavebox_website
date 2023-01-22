@@ -2,7 +2,7 @@ import React from 'react'
 
 const Believe = () => {
     return (
-        <div className='bg-[#282828] text-black w-full h-full p-10'>
+        <div className='bg-[#282828] text-black w-full h-full sm:p-10 p-3'>
             <div className='bg-white'>
                 <div className='xl:max-w-[1200px] px-5 mx-auto pt-20 pb-24'>
                     <div className='grid grid-cols-1 md:grid-cols-2  gap-y-3 xl:gap-y-10'>
@@ -13,7 +13,7 @@ const Believe = () => {
                         <div></div>
                         <div className='flex justify-center flex-col items-center'>
                             <div className='relative w-max mb-5'>
-                                <h1 className='text-center text-[#930D21] tracking-widest text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>NOTHING IS IMPOSSIBLE</h1>
+                                <h1 className='text-center text-[#930D21] tracking-widest text-xl sm:text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>NOTHING IS IMPOSSIBLE</h1>
                                 <p className='absolute top-0 left-0 w-full h-full bg-black -rotate-[3deg] z-[1]'></p>
                                 {/* <p className='absolute top-0 left-0 w-full h-full bg-black rotate-4 z-[1]'></p> */}
                             </div>
@@ -21,7 +21,7 @@ const Believe = () => {
                         </div>
                         <div className='flex justify-center flex-col items-center mt-5'>
                             <div className='relative w-max mb-5'>
-                                <h1 className='text-center text-[#930D21] tracking-widest text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>WAVE BOX'S MISSION</h1>
+                                <h1 className='text-center text-[#930D21] tracking-widest text-xl sm:text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>WAVE BOX'S MISSION</h1>
                                 <p className='absolute top-0 left-0 w-full h-full bg-black rotate-[4deg] z-[1]'></p>
                                 {/* <p className='absolute top-0 left-0 w-full h-full bg-black rotate-4 z-[1]'></p> */}
                             </div>
@@ -31,7 +31,7 @@ const Believe = () => {
                         <div></div>
                         <div className='flex justify-center flex-col items-center'>
                             <div className='relative w-max mb-5'>
-                                <h1 className='text-center text-[#930D21] tracking-widest text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>OUR VISION</h1>
+                                <h1 className='text-center text-[#930D21] tracking-widest text-xl sm:text-3xl font-medium bg-black px-0.5 py-1 z-[2] relative text-shadow-sub'>OUR VISION</h1>
                                 <p className='absolute top-0 left-0 w-full h-full bg-black -rotate-6 z-[1]'></p>
                                 {/* <p className='absolute top-0 left-0 w-full h-full bg-black rotate-4 z-[1]'></p> */}
                             </div>
