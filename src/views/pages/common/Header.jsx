@@ -9,6 +9,17 @@ const Header = () => {
 
     const [open, setOpen] = useState(false)
     let [modal, setModal] = useState(false)
+    const [openMenu, setOpenMenu] = useState(false);
+
+    const changeNavbar = () => {
+        if (window.scrollY >= 90) {
+            setOpenMenu(true);
+        }
+        else {
+            setOpenMenu(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbar);
 
 
     useEffect(() => {
@@ -47,7 +58,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className='flex justify-between px-6 xl:px-10 py-3 fixed w-full z-[5] top-0'>
+            <div className={`flex justify-between items-center px-6 xl:px-10 sm:py-3 py-1 fixed w-full z-[5] top-0 duration-700 ${openMenu ? 'bg-black bg-opacity-70' : 'bg-opacity-0'}`}>
                 <div>
                     <NavLink to="/"><img src={logo} alt="" className='h-14' /></NavLink>
                 </div>

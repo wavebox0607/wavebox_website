@@ -24,6 +24,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import Adis from "./Adis";
 import Imran from "./Imran";
 import InnoKids from "./InnoKIds";
+import Rong from "./Rong";
 
 
 const SliderMain = () => {
@@ -129,7 +130,7 @@ const SliderMain = () => {
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img1} bgImageAlt="image" strength={300}>
                         </Parallax> */}
                         <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
+                            <div className="flex items-center gap-3 md:mb-8 mb-3">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-gray-400 text-sm font-semibold tracking-widest">PASSION MEETS PROFESSION</p>
                             </div>
@@ -151,7 +152,7 @@ const SliderMain = () => {
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
                         </Parallax> */}
                         <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
+                            <div className="flex items-center gap-3 md:mb-8 mb-3">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
                             </div>
@@ -159,9 +160,9 @@ const SliderMain = () => {
                                 <h1 className="text-white text-5xl sm:text-6xl font-bold">Bishworang</h1>
                             </div>
                             <div>
-                                <p className="text-white text-sm font-bold mt-8">Wave Box- June 19th 2022</p>
+                                <p className="text-white text-sm font-bold md:mt-8 mt-3">Wave Box- June 19th 2022</p>
                             </div>
-                            <div onClick={() => { setIsOpen(!isOpen); setTitle('adis') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
+                            <div onClick={() => { setIsOpen(!isOpen); setTitle('rong') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
                                 <IoIosArrowDroprightCircle className="text-white text-3xl" />
                                 <p className="tracking-[4px] text-white font-semibold text-xs">VIEW CASE</p>
                             </div>
@@ -176,7 +177,7 @@ const SliderMain = () => {
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img2} bgImageAlt="image" strength={300}>
                         </Parallax> */}
                         <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
+                            <div className="flex items-center gap-3 md:mb-8 mb-3">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">E-Commerce Website</p>
                             </div>
@@ -184,7 +185,7 @@ const SliderMain = () => {
                                 <h1 className="text-white text-5xl sm:text-6xl font-bold">Adis BD</h1>
                             </div>
                             <div>
-                                <p className="text-white text-sm font-bold mt-8">Wave Box- October 19th 2017</p>
+                                <p className="text-white text-sm font-bold md:mt-8 mt-3">Wave Box- October 19th 2017</p>
                             </div>
                             <div onClick={() => { setIsOpen(!isOpen); setTitle('adis') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
                                 <IoIosArrowDroprightCircle className="text-white text-3xl" />
@@ -201,7 +202,7 @@ const SliderMain = () => {
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img3} bgImageAlt="image" strength={300}>
                         </Parallax> */}
                         <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
+                            <div className="flex items-center gap-3 md:mb-8 mb-3">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Portfolio Website</p>
                             </div>
@@ -209,7 +210,7 @@ const SliderMain = () => {
                                 <h1 className="text-white text-5xl sm:text-6xl font-bold">Imran Shakha</h1>
                             </div>
                             <div>
-                                <p className="text-white text-sm font-bold mt-8">Wave Box- September 26th 2017</p>
+                                <p className="text-white text-sm font-bold md:mt-8 mt-3">Wave Box- September 26th 2017</p>
                             </div>
                             <div onClick={() => { setIsOpen(!isOpen); setTitle('imran') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
                                 <IoIosArrowDroprightCircle className="text-white text-3xl" />
@@ -226,7 +227,7 @@ const SliderMain = () => {
                         {/* <Parallax className='absolute left-0 right-0 h-[100vh] top-0' bgImage={img4} bgImageAlt="image" strength={300}>
                         </Parallax> */}
                         <div className="absolute z-[2] lg:left-20 xl:left-60 left-5 top-1/2 -translate-y-1/2">
-                            <div className="flex items-center gap-3 mb-8">
+                            <div className="flex items-center gap-3 md:mb-8 mb-3">
                                 <p className="w-12 h-[2px] bg-gray-700"></p>
                                 <p className="text-white text-sm font-semibold tracking-widest uppercase">Organizational Website</p>
                             </div>
@@ -234,7 +235,7 @@ const SliderMain = () => {
                                 <h1 className="text-white text-5xl sm:text-6xl font-bold">InnoKids</h1>
                             </div>
                             <div>
-                                <p className="text-white text-sm font-bold mt-8">Wave Box- October 19th 2017</p>
+                                <p className="text-white text-sm font-bold md:mt-8 mt-3">Wave Box- October 19th 2017</p>
                             </div>
                             <div onClick={() => { setIsOpen(!isOpen); setTitle('inno') }} className="flex items-center lg:cursor-pointer gap-5 px-10 py-3 border rounded-full w-max mt-8 hover:scale-x-105 duration-700">
                                 <IoIosArrowDroprightCircle className="text-white text-3xl" />
@@ -284,6 +285,7 @@ const SliderMain = () => {
                                 <Dialog.Panel className={`mx-auto h-[100vh] min-w-full rounded bg-black text-white overflow-y-auto`}>
                                     {title === 'adis' && <Adis />}
                                     {title === 'imran' && <Imran />}
+                                    {title === 'rong' && <Rong />}
                                     {title === 'inno' && <InnoKids />}
                                 </Dialog.Panel>
                                 <div className={`absolute top-0 left-0 h-full bg-black z-[60] duration-[2000ms] ${modal ? 'w-0' : 'w-full'}`}></div>

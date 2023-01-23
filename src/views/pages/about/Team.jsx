@@ -121,7 +121,7 @@ const team = [
     {
         image: img4,
         name: 'Ashiqur Rahman',
-        title: 'Graphic Designer'
+        title: 'Product Designer'
     },
     {
         image: img5,
