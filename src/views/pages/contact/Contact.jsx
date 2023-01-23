@@ -136,8 +136,11 @@ const Contact = () => {
 
             </div>
           </div>
+          <div className="relative w-full h-[800px] pt-20">
+                <div style={{ width: '100%' }}><iframe title='map' width={"100%"} height={"600"} frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14598.489486079072!2d90.40631465733277!3d23.83202382170301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7c1a344cef1%3A0xd5da975683c0ee09!2sWAVE%20BOX!5e0!3m2!1sen!2sbd!4v1657030266375!5m2!1sen!2sbd?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/farm-gps/">farm gps</a></iframe></div>
+          </div>
 
-          <div className='bg-black py-20 text-white'>
+          <div className='bg-black py-50 text-white'>
             <div className='md:py-24 py-5 relative group'>
               <div className='bg-[#090909] absolute top-0 w-full xl:group-hover:w-0 xl:group-hover:right-0 right-0 duration-1000 bottom-0 z-[1] '></div>
               <div className='flex justify-between items-center xl:max-w-[1200px] px-5 xl:px-0 mx-auto relative z-[2]'>
@@ -145,7 +148,7 @@ const Contact = () => {
                   <p className='md:text-5xl text-3xl font-semibold leading-[60px]'>NEWS FEED</p>
                 </div>
                 <div>
-                  <p className='font-medium group-hover:underline underline-offset-4'>See More News</p>
+                  <p className='font-medium group-hover:underline underline-offset-4 cursor-pointer'>See More News</p>
                 </div>
               </div>
             </div>

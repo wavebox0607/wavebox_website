@@ -92,6 +92,11 @@ const About = () => {
             </div>
           </div>
 
+          <div className='pb-[-10px]'>
+            {/* <video  loop="true" autoplay= "autoplay" controls > <source src="https://www.about.wavebox.net/wp-content/uploads/2021/07/My-Video2.mp4" type="video/mp4"/> </video> */}
+            <video className="w-full" src="https://www.about.wavebox.net/wp-content/uploads/2021/07/My-Video2.mp4" type="video/mp4" autoPlay muted loop="1" z-inex="99"></video>
+          </div>
+
           <div className={`about-bg w-full`}>
             <div className='xl:max-w-[1200px] mx-auto pt-20 pb-24 px-5'>
               <h1 className='text-4xl md:text-5xl xl:text-7xl font-bold text-[#930D21] text-shadow-title xl:text-left text-center'>ABOUT WAVEBOX</h1>
