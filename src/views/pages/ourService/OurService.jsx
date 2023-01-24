@@ -131,6 +131,7 @@ const OurService = () => {
                 {/* selected image show  */}
                 <div className='relative z-[1] w-full'>
                     <div className='h-[100vh] w-full relative'>
+                        <p className='absolute top-0 left-0 z-[3] w-full h-full bg-black bg-opacity-20'></p>
                         <img src={services[0]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 0 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
                         <img src={services[1]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 1 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
                         <img src={services[2]?.image[0]} alt="" className={`h-full lg:opacity-100 opacity-0 ${id === 2 ? 'left-0 w-full z-[2] duration-[1000ms]' : 'right-0 w-0 duration-[1500ms]'} top-0 absolute`} />
@@ -149,7 +150,11 @@ const OurService = () => {
                                                 </div>
                                                 <p onClick={() => setIsOpen(!isOpen)} className="text-[20px] px-5 rounded-md py-1 bg-green-500 w-max lg:cursor-pointer">Details</p>
                                             </div>
-                                            <img src={item?.image[0]} alt="" className={`lg:h-[100vh] h-[50vh] left-0 w-full z-[2] top-0 absolute lg:opacity-0`} />
+                                            <div className="relative">
+                                                <img src={item?.image[0]} alt="" className={`lg:h-[100vh] h-[50vh] w-full z-[2] lg:opacity-0`} />
+                                                <p className='absolute top-0 left-0 z-[300] w-full h-full bg-black bg-opacity-20 lg:hidden'></p>
+                                            </div>
+
 
                                             {/* <p className="bg-black md:absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-50"></p> */}
                                             {/* <p className="bg-black absolute top-0 left-0 bottom-0 right-0 z-[1] bg-opacity-20"></p> */}
