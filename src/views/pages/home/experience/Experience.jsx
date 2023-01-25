@@ -4,7 +4,7 @@ import img1 from '../../../../assets/images/experience.jpg'
 const Experience = () => {
     return (
         <div className='bg-black w-full flex justify-end'>
-            <div className='pb-24 lg:pt-60 pt-16 container text-white'>
+            <div className='pb-24 lg:pt-60 pt-16 lg:container text-white'>
                 <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-5'>
                     <div className='col-span-1 grid grid-cols-1 gap-y-5 lg:gap-y-16 pl-5'>
                         <h1 className='lg:justify-self-end justify-self-center lg:-mr-14 relative z-[1] md:text-5xl text-3xl font-bold'>Hello we are, <br /> WAVE BOX</h1>

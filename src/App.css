@@ -4,7 +4,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* pointer-events: none; */
   /* z-index: 1; */
 }
@@ -14,11 +14,20 @@
   pointer-events: none;
 } */
 
-html,
+/* html,
 body {
   height: 100%;
-  /* overscroll-behavior-y: none; */
+  overscroll-behavior-y: none;
+} */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color:#090909;
+  /* font-size: 48px; */
 }
+
 
 ::-webkit-scrollbar {
   width: 5px;
