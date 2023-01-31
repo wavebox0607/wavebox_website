@@ -60,7 +60,7 @@ const LoaderThree = ({ modal, loader }) => {
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 mt-2 z-[5]'>
           <h1>Loading</h1>
         </div>
-        <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[5] text-[200px] xl:text-[600px] opacity-[0.03] tracking-wider xl:tracking-widest'>
+        <div className=' absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[5] text-[200px] xl:text-[600px] opacity-[0.1] tracking-wider xl:tracking-widest'>
           <CountUp start={50} end={100} duration={2.9} />
         </div>
         <div className='h-[2px] w-full absolute top-1/2 left-0 -translate-y-1/2 bg-gray-600 z-[5]'></div>

@@ -5,6 +5,11 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { Dialog, Transition } from '@headlessui/react'
 import ServiceDetails from "./ServiceDetails";
 import { services } from "./Services"
+import Pricing from "./Pricing";
+import useWindowSize from "../../hooks/useWindowSize";
+import { useRef } from "react";
+import Footer from "../common/Footer";
+import { NavLink } from "react-router-dom";
 // import ScrollToTop from "../../components/utils/ScrollToTop";
 
 
@@ -14,6 +19,59 @@ const OurService = () => {
     const [allId, setAllId] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
     const [modal, setModal] = useState(false)
+
+    //Hook to grab window size
+    const size = useWindowSize();
+
+    // Ref for parent div and scrolling div
+    const app = useRef();
+    const scrollContainer = useRef();
+
+    // Configs
+    const data = {
+        ease: 0.05,
+        current: 0,
+        previous: 0,
+        rounded: 0
+    };
+
+    // Run scrollrender once page is loaded.
+    useEffect(() => {
+        requestAnimationFrame(() => skewScrolling());
+    });
+
+    //set the height of the body.
+    useEffect(() => {
+        setBodyHeight();
+    }, [size.height]);
+
+    //Set the height of the body to the height of the scrolling div
+    const setBodyHeight = () => {
+        document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height
+            }px`;
+    };
+
+    // Scrolling
+    const skewScrolling = () => {
+        //Set Current to the scroll position amount
+        data.current = window.scrollY;
+        // Set Previous to the scroll previous position
+        data.previous += (data.current - data.previous) * data.ease;
+        // Set rounded to
+        data.rounded = Math.round(data.previous * 100) / 100;
+
+        // Difference between
+        const difference = data.current - data.rounded;
+        const acceleration = difference / size.width;
+        const velocity = +acceleration;
+        const skew = velocity * 0.5;
+
+        //Assign skew and smooth scrolling to the scroll container
+        scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+
+        //loop vai raf
+        requestAnimationFrame(() => skewScrolling());
+    };
 
 
     useEffect(() => {
@@ -29,14 +87,6 @@ const OurService = () => {
         }, 200);
 
     }, [isOpen])
-
-    // if (id) {
-    //     document.body.style.overflow = 'hidden';
-    // }
-    // else {
-    //     document.body.style.overflow = 'unset';
-    // }
-
 
 
 
@@ -123,9 +173,9 @@ const OurService = () => {
     }
     `
     return (
-        <div className="App hello">
+        <div ref={app} className="App">
 
-            <div className={`relative overflow-hidden`}>
+            <div ref={scrollContainer} className={`relative`}>
                 <style>{styleCss}</style>
                 {/* for small images */}
                 {/* selected image show  */}
@@ -148,7 +198,7 @@ const OurService = () => {
                                                     <p className="text-[20px] font-semibold">{item?.title}</p>
                                                     <p className="text-[16px] ">{item?.description.slice(0, 40)}</p>
                                                 </div>
-                                                <p onClick={() => setIsOpen(!isOpen)} className="text-[20px] px-5 rounded-md py-1 bg-green-500 w-max lg:cursor-pointer">Details</p>
+                                                <NavLink to={item?.url}><p className="text-[20px] px-5 rounded-md py-1 bg-green-500 w-max lg:cursor-pointer">Details</p></NavLink>
                                             </div>
                                             <div className="relative">
                                                 <img src={item?.image[0]} alt="" className={`lg:h-[100vh] h-[50vh] w-full z-[2] lg:opacity-0`} />
@@ -172,10 +222,14 @@ const OurService = () => {
                         </div>
                     </div>
                 </div>
+                {/* <Pricing /> */}
+                <Footer />
             </div>
 
 
-            <Transition show={isOpen} as={Fragment}  >
+
+
+            {/* <Transition show={isOpen} as={Fragment}  >
 
                 <Dialog
                     open={isOpen}
@@ -191,10 +245,8 @@ const OurService = () => {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-0"
                     >
-                        {/* The backdrop, rendered as a fixed sibling to the panel container */}
                         <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
                     </Transition.Child>
-                    {/* Full-screen scrollable container */}
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-700"
@@ -205,9 +257,7 @@ const OurService = () => {
                         leaveTo="opacity-0 scale-0"
                     >
                         <div className="fixed inset-0 overflow-y-auto" >
-                            {/* Container to center the panel */}
                             <div className="flex min-h-full items-center justify-center">
-                                {/* The actual dialog panel  */}
                                 <div onClick={() => setIsOpen(!isOpen)} className="fixed top-10 right-10 lg:cursor-pointer z-[3] bg-black text-white rounded-full w-10 h-10 flex justify-center items-center"><AiOutlineClose className="text-3xl" /></div>
                                 <Dialog.Panel className={`mx-auto h-[100vh] min-w-full rounded bg-black text-white overflow-y-auto`}>
                                     <div id="section-1" className="grid grid-cols-4 py-10 px-5 xl:py-20 xl:px-40 gap-10 h-full w-full" >
@@ -244,7 +294,7 @@ const OurService = () => {
                         </div>
                     </Transition.Child>
                 </Dialog>
-            </Transition>
+            </Transition> */}
 
 
         </div>
