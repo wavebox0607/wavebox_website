@@ -156,7 +156,7 @@ const OurService = () => {
         }
     };
 
-    const result = services.filter(item => item?.id !== allId)
+    // const result = services.filter(item => item?.id !== allId)
     // console.log(result, "result");
 
     const styleCss = `
