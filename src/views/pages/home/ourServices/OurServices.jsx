@@ -3,6 +3,7 @@ import img1 from '../../../../assets/images/ourServices/color-01.svg'
 import img2 from '../../../../assets/images/ourServices/color-02.svg'
 import img3 from '../../../../assets/images/ourServices/color-03.svg'
 import img4 from '../../../../assets/images/ourServices/color-04.svg'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -28,26 +29,34 @@ const OurServices = () => {
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4'>
-                    <div className='group h-full w-full text-center p-10'>
+                    <NavLink to="/website-development">
+                    <div className='group h-full w-full text-center p-10 cursor-pointer'>
                         <img src={img1} alt="" className='h-20 mx-auto mb-5' />
                         <h1 className='mb-8 text-2xl font-bold'>WEBSITE <br />DEVELOPMENT</h1>
-                        <p className='font-semibold text-[#717171]'>WAVE BOX delivering the best web development services to craft bespoke websites, web-tools, etc.</p>
+                        <p className='font-semibold text-[#717171]'>We Build any kind of custom website for your organization.</p>
                     </div>
-                    <div className='group h-full w-full text-center p-10 bg-[#090909]'>
-                        <img src={img2} alt="" className='h-20 mx-auto mb-5' />
-                        <h1 className='mb-8 text-2xl font-bold'>UI/UXDESIGN</h1>
-                        <p className='font-semibold text-[#717171]'>WAVE BOX delivering the best web development services to craft bespoke websites, web-tools, etc.</p>
-                    </div>
-                    <div className='group h-full w-full text-center p-10'>
-                        <img src={img3} alt="" className='h-20 mx-auto mb-5' />
+                    </NavLink>
+                    <NavLink to="/web-application-development">
+                    <div className='group h-full w-full text-center p-10 bg-[#090909] cursor-pointer'>
+                        <img src={img2} alt="" className='h-20 mx-auto mb-5 ' />
                         <h1 className='mb-8 text-2xl font-bold'>WEB APPLICATION</h1>
-                        <p className='font-semibold text-[#717171]'>WAVE BOX delivering the best web development services to craft bespoke websites, web-tools, etc.</p>
+                        <p className='font-semibold text-[#717171]'>Run your busness fast & hassle-free! Develop a software from WAVE BOX.</p>
                     </div>
-                    <div className='group h-full w-full text-center p-10 bg-[#090909]'>
-                        <img src={img4} alt="" className='h-20 mx-auto mb-5' />
+                    </NavLink>
+                    <NavLink to="/mobile-app-development">
+                    <div className='group h-full w-full text-center p-10 cursor-pointer'>
+                        <img src={img3} alt="" className='h-20 mx-auto mb-5 ' />
                         <h1 className='mb-8 text-2xl font-bold'>MOBILE APP<br />DEVELOPMENT</h1>
-                        <p className='font-semibold text-[#717171]'>WAVE BOX delivering the best web development services to craft bespoke websites, web-tools, etc.</p>
+                        <p className='font-semibold text-[#717171]'>Give your customer a better experience by developing a mobile app form WAVE BOX.</p>
                     </div>
+                    </NavLink>
+                    <NavLink to="/social-media-marketing">
+                    <div  className='group h-full w-full text-center p-10 bg-[#090909] cursor-pointer'>
+                        <img src={img4} alt="" className='h-20 mx-auto mb-5 ' />
+                        <h1 className='mb-8 text-2xl font-bold'>Social Media<br />Marketing</h1>
+                        <p className='font-semibold text-[#717171]'>randing your business digitally with WAVE BOX.</p>
+                    </div>
+                    </NavLink>
 
                 </div>
 
