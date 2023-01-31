@@ -19,14 +19,14 @@ const Home = () => {
 
   //Hook to grab window size
   const size = useWindowSize();
-  // console.log(size,"size");
+  console.log(size,"size");
 
   // Ref for parent div and scrolling div
   const app = useRef();
   const scrollContainer = useRef();
 
-  // console.log(app,"app");
-  // console.log(scrollContainer,"scrollContainer");
+  console.log(app,"app");
+  console.log(scrollContainer,"scrollContainer");
 
   // Configs
   const data = {
