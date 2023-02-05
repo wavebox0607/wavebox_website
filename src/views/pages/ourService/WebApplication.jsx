@@ -75,20 +75,20 @@ const WebApplication = () => {
                     <div id="section-1" className="grid grid-cols-4 py-10 px-5 xl:py-20 xl:px-40 gap-10 h-full w-full" >
                         <div className="xl:col-span-3 col-span-4 h-full w-full">
                             <div className='grid grid-cols-2 md:gap-5 gap-2 sm:h-[600px] h-[350px] w-full'>
-                                <div className='h-auto w-full'>
+                                <div className='sm:h-[325px] h-auto w-full'>
                                     <img src={img1} alt="" className='h-full min-w-full' />
                                 </div>
-                                <div className='h-auto w-full'>
+                                <div className='sm:h-[325px] h-auto w-full'>
                                     <img src={img2} alt="" className='h-full min-w-full' />
                                 </div>
-                                <div className='h-auto w-full'>
+                                <div className='sm:h-[325px] h-auto w-full'>
                                     <img src={img3} alt="" className='h-full min-w-full' />
                                 </div>
-                                <div className='h-auto w-full'>
+                                <div className='sm:h-[325px] h-auto w-full'>
                                     <img src={img4} alt="" className='h-full min-w-full' />
                                 </div>
                             </div>
-                            <div className='mt-8 mb-20'>
+                            <div className='sm:mt-24 mt-8 mb-20'>
                                 <div>
                                     <h1 className='md:text-5xl text-3xl font-bold'>Web Application Development</h1>
                                     <p className='h-[2px] w-28 bg-white mt-5'></p>
